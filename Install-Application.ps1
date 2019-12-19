@@ -4,7 +4,7 @@ $installAppDisplayName = "Check_MK Agent","Check MK Agent"
 $installAppVersion = "1.6.0p3"
 
 # Path to installer
-$appInstallerPath = "\\corporate\osk\Data\GEMENSAM\DATA\Applikationer\CheckMKClient\1.6.0\check_mk_agent.msi"
+$appInstallerPath = "\\server\CheckMKClient\1.6.0\check_mk_agent.msi"
 
 # Installer command
 $appInstallerArguments = "/i","$appInstallerPath","/qn"
@@ -13,11 +13,11 @@ $appInstallerArguments = "/i","$appInstallerPath","/qn"
 $UpdateOnly = $true
 
 # DB-information
-$DBServer = "SE-OSK-SQL100.corporate.saft.org"
-$DBName = "SaftScriptLog"
+$DBServer = "sqlserver.contoso.org"
+$DBName = "ScriptLog"
 $DBTable = "UpdateToCheckMK160"
 
-$regKey = "HKLM:\SOFTWARE\Saft Batteries\Scripts\UpdateToCheckMK160"
+$regKey = "HKLM:\SOFTWARE\Contoso\Scripts\UpdateToCheckMK160"
 #$regName = "UpdateToCheckMK160"
 #$regValue = "Success" # Change this if you want the script to run again on all servers
 
